@@ -1,0 +1,11 @@
+{
+  "pg": {
+    "driver": "pg",
+    "user": "postgres",
+    "password": "user",
+    "host": "localhost",
+    "database": "todoappdb",
+    "port": 5432,
+    "ssl": "true"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www && npm run client",
+    "devstart": "nodemon ./bin/www",
+    "db:migrate": "node helpers/db-migrate.js",
+    "migrate": "node-pg-migrate",
+    "client": "cd ../client && npm start",
+    "db:seed": "npm run db:migrate && node helpers/db-seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "dotenv": "^9.0.2",
+    "express": "~4.16.1",
+    "faker": "^5.5.3",
+    "helmet": "^4.6.0",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "massive": "^6.9.0",
+    "morgan": "~1.9.1",
+    "node-pg-migrate": "^5.9.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.6.0"
+  }
+}
